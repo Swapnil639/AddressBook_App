@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/new_addressbook.css">
+    <title>Address Book App</title>
+</head>
+<!-- UC 1 -->
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo-add.jpg" alt="logo">
+            <div><span class=" book-text">ADDRESS</span><br>
+                <span class="book-text add-book">BOOK</span>
+
+            </div>
+        </div>
+    </header>
+    </div>
+<!-- UC 2 -->
+<div class="form-content">
+    <form class="form" action="#" onsubmit="save(event);" onreset="reset();">
+        <div class="form-head">
+            <span class="form-head-text">PERSON ADDRESS FORM</span>
+            <span class="cross-icon">
+                <ion-icon class="close-circle" name="close-circle"></ion-icon>
+                <a href="../pages/new_addressbook.html"></a>
+            </span>
+        </div>
+<!-- UC 3 -->
+
+        <div class="body">
+            <label class="label text" for="name">Full Name</label></br>&nbsp;
+            <input class="input" type="text" id="name" name="name" required>
+            <error-output class="text-error"></error-output>
+
+            <label class="label text" for="address">Address</label></br>&nbsp;
+            <textarea id="address" class="input" name="address" style="height: 100px; "></textarea>
+            <error-output class="address-error"></error-output>
+
+            <div class="row-content">
+                <div class="label-city">
+                    <label class="city" for="city">City</label><br>&nbsp;
+                    <select id="city" name="city">
+                    <option value="">Select City</option>
+                    <option value="Achalpur">Achalpur</option>
+                    <option value="Ahiri">Ahiri</option>
+                    <option value="Ahmadnagar">Ahmadnagar</option>
+                    <option value="Ahmadpur">Ahmadpur</option>
+                    <option value="Airoli">Airoli</option>
+                    <option value="Ajra">Ajra</option>
+                    <option value="Akalkot">Akalkot</option>
+                    <option value="Akola">Akola</option>
+                    <option value="Akot">Akot</option>
+                    <option value="Alandi">Alandi</option>
+                    <option value="Alibag">Alibag</option>
+                    <option value="Allapalli">Allapalli</option>
+                    <option value="Amalner">Amalner</option>
+                    <option value="Amarnath">Amarnath</option>
+                    <option value="Ambad">Ambad</option>
+                    <option value="Ambajogai">Ambajogai</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Kondalwadi">Kondalwadi</option>
+                    <option value="Kopargaon">Kopargaon</option>
+                    <option value="Koradi">Koradi</option>
+                    <option value="Koregaon">Koregaon</option>
+                    <option value="Koynanagar">Koynanagar</option>
+                    <option value="Pandharpur">Pandharpur</option>
+                    <option value="Satana">Satana</option>
+                    <option value="Satara">Satara</option>
+                    <option value="Satara Division">Satara Division</option>
+                    <option value="Savantvadi">Savantvadi</option>
+                    <option value="Savda">Savda</option>
+                    <option value="Selu">Selu</option>
+                    <option value="Sirur">Sirur</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Sonegaon">Sonegaon</option>
+                    <option value="Soygaon">Soygaon</option>
+                    <option value="Srivardhan">Srivardhan</option>
+                    <option value="Surgana">Surgana</option>
+                    <option value="Talegaon Dabhade">Talegaon Dabhade</option>
+                    <option value="Taloda">Taloda</option>
+                    <option value="Tarapur">Tarapur</option>
+                    <option value="Tasgaon">Tasgaon</option>
+                    <option value="Telhara">Telhara</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Trimbak">Trimbak</option>
+                    <option value="Tuljapur">Tuljapur</option>
+                    <option value="Tumsar">Tumsar</option>
+                    <option value="Udgir">Udgir</option>
+                    <option value="Ulhasnagar">Ulhasnagar</option>
+                    <option value="Umarga">Umarga</option>
+                    <option value="Umarkhed">Umarkhed</option>
+                    <option value="Umred">Umred</option>
+                    <option value="Uran">Uran</option>
+                    <option value="Vada">Vada</option>
+                    <option value="Vaijapur">Vaijapur</option>
+                    <option value="Varangaon">Varangaon</option>
+          
+                </select>
+            </div>
+            <div class="label-state">
+                <label class="state" for="state">State</label><br>&nbsp;
+                <select id="state" name="state">
+                    <option value="">Select State</option>
+                    <option value="AP">Andra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CG">Chhattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu & Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                
+                </select>
+            </div>
+            <div class="label-zip">
+                <label class="zip" for="zipcode">Zipcode</label></br>&nbsp;
+                <input class="input" id="zipcode " name="zipcode" placeholder="Zip Code "></input>
+            </div>
+        </div>
+        
+        <label class="label-text-phone" for="phone">Phone Number</label>
+        <input class="input" type="phone" id="phone" name="phone"  required>
+        <error-output class="phone-error"></error-output>
+<!-- UC 5 -->
+        <div class="add-reset">
+            <button type="submit" class="addButton" id="addButton">Submit</button>
+            <button type="reset" class="resetButton" id="resetButton">Reset</button>
+        </div>
+                   
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
